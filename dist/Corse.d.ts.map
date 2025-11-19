@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "file": "Corse.d.ts",
+    "sourceRoot": "",
+    "sources": [
+        "../src/Corse.ts"
+    ],
+    "names": [],
+    "mappings": ""
+}
