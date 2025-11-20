@@ -42,10 +42,24 @@ function calculateTax(income, taxYear = 2022) {
     return income * 1.4;
 }
 calculateTax(10000);
-//Objects
+// Type Alias
 let employee = {
     id: 1, name: "Mosh", retire: (date) => {
         console.log(date);
     }
 };
+//Union Types
+function kgToLbs(weight) {
+    //Narrowing
+    if (typeof weight === "number") {
+        return weight * 2.2;
+    }
+    else {
+        return parseInt(weight) * 2.2;
+    }
+}
+kgToLbs(10);
+kgToLbs("10kg");
+console.log(kgToLbs(10));
+console.log(kgToLbs("10kg"));
 //# sourceMappingURL=Corse.js.map
