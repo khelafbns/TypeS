@@ -109,10 +109,17 @@ greet(null);
 type Customer = {
     birthday?: Date
 }
-function getCustomer(id: number): Customer | null | undefined{
+function getCustomer(id: number): Customer | null | undefined {
     return id === 0 ? null : { birthday: new Date() };
 }
 let customer = getCustomer(1);
 console.log(customer?.birthday?.getFullYear());
 
 //Optional Chaining with Arrays
+
+
+function identity<T>(value: T): T {
+    return value;
+}
+identity<number>(1);
+identity<string>("sxfg");
