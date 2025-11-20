@@ -25,3 +25,12 @@ let Numbers :Array<number> = [1,2,3];
 
 //Tuples
 let user: [number,string] = [1,"a"];
+
+//Enums
+// const small = 1;
+// const medium = 2;
+// const large = 3;
+//PascalCase
+enum Size {Small=1, Medium, Large}
+let mySize: Size= Size.Medium;
+console.log(mySize);
