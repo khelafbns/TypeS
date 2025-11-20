@@ -42,3 +42,14 @@ function calculateTax(income: number, taxYear = 2022): number {
     return income * 1.4;
 }
 calculateTax(10_000);
+
+//Objects
+let employee: {
+    readonly id: number,
+    name: string,
+    retire: (date: Date) => void
+} = {
+    id: 1, name: "Mosh", retire: (date: Date) => {
+        console.log(date);
+    }
+};

@@ -35,4 +35,17 @@ var Size;
 })(Size || (Size = {}));
 let mySize = Size.Medium;
 console.log(mySize);
+//Functions
+function calculateTax(income, taxYear = 2022) {
+    if (taxYear < 2022)
+        return income * 1.2;
+    return income * 1.4;
+}
+calculateTax(10000);
+//Objects
+let employee = {
+    id: 1, name: "Mosh", retire: (date) => {
+        console.log(date);
+    }
+};
 //# sourceMappingURL=Corse.js.map
