@@ -47,7 +47,7 @@ calculateTax(10_000);
 
 
 type Employee = {
-  readonly id: number,
+    readonly id: number,
     name: string,
     retire: (date: Date) => void
 }
@@ -62,9 +62,9 @@ let employee: Employee = {
 //Union Types
 function kgToLbs(weight: number | string): number {
     //Narrowing
-    if (typeof weight === "number"){
+    if (typeof weight === "number") {
         return weight * 2.2;
-    }else{
+    } else {
         return parseInt(weight) * 2.2;
     }
 }
@@ -73,3 +73,18 @@ kgToLbs(10);
 kgToLbs("10kg");
 console.log(kgToLbs(10));
 console.log(kgToLbs("10kg"));
+
+//Intersection Types
+type Draggable = {
+    drag: () => void
+}
+
+type Resizable = {
+    resize: () => void
+}
+
+type UIWidget = Draggable & Resizable;
+let textBox: UIWidget = {
+    drag: () => { },
+    resize: () => { }
+}
