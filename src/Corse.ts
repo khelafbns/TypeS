@@ -22,3 +22,6 @@ let  numbers : number[] = [1,2,3];
 let  bools : boolean[] = [true,false,true];
 let  arr : any[] = [1,true,"a"];
 let Numbers :Array<number> = [1,2,3];
+
+//Tuples
+let user: [number,string] = [1,"a"];
